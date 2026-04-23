@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: janardhan6304/emailservice:latest
+        image: janardhan6304/emailservice:April
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: janardhan6304/checkoutservice:latest
+          image: janardhan6304/checkoutservice:April
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/recommendationservice:latest
+        image: janardhan6304/recommendationservice:April
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: janardhan6304/frontend:latest
+          image: janardhan6304/frontend:April
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/paymentservice:latest
+        image: janardhan6304/paymentservice:April
         ports:
         - containerPort: 50051
         env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/productcatalogservice:latest
+        image: janardhan6304/productcatalogservice:April
         ports:
         - containerPort: 3550
         env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/cartservice:latest
+        image: janardhan6304/cartservice:April
         ports:
         - containerPort: 7070
         env:
@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: janardhan6304/loadgenerator:latest
+        image: janardhan6304/loadgenerator:April
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -496,7 +496,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/currencyservice:latest
+        image: janardhan6304/currencyservice:April
         ports:
         - name: grpc
           containerPort: 7000
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: janardhan6304/shippingservice:latest
+        image: janardhan6304/shippingservice:April
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: janardhan6304/adservice:latest
+        image: janardhan6304/adservice:April
         ports:
         - containerPort: 9555
         env:
